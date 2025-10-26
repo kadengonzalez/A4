@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Hotel xmlns:xsi"http://www.w3.org/2001/XMLSchema-instance"
+<Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="Hotels.xsd">
     <!--Error 1: Root element should be <Hotels> not <Hotel>-->
 
@@ -21,5 +21,6 @@
        <Name>Duplicate Hotel</Name>
        <Name>Extra Name</Name> <!--Error 5: Duplicate name element-->
       </Hotel>
+
 
 </Hotel> 
