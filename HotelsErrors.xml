@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Hotel xmlns:xsi"http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="Hotels.xsd">
+    <!--Error 1: Root element should be <Hotels> not <Hotel>-->
+
+    <Hotel Rating="4.5">
+       <Name>Westin Tempe</Name>
+       <!--Error 2: Missing a <Phone> element -->
+       <Address NearestAirport="Sky Harbor">
+         <Number>11</Number>
+         <Street>E 7th St</Street>
+         <City>Tempe</City>
+         <State>AZ</State>
+         <!--Error 3: Missing closing tag for Address-->
+         <Zip>85281</Zip>
+
+    </Hotel>
+
+    <Hotel>
+       <!--Error 4: Missing required Rating attribute-->
+       <Name>Duplicate Hotel</Name>
+       <Name>Extra Name</Name> <!--Error 5: Duplicate name element-->
+      </Hotel>
+
+</Hotel> 
